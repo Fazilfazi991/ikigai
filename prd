@@ -1,0 +1,891 @@
+# IKIGAI AUTOSPARE PARTS - COMPLETE WEBSITE STRUCTURE & CONTENT
+
+## BRAND COLORS
+- **Primary Navy**: #1F3044
+- **Secondary Orange**: #FB9039
+- **Accent Gray**: #646C79
+- **White**: #FFFFFF
+- **Light Gray**: #F5F5F5
+
+---
+
+## WEBSITE STRUCTURE
+
+### 1. HOME PAGE
+### 2. ABOUT US PAGE
+### 3. BRANDS PAGE
+### 4. FOR CUSTOMERS PAGE
+### 5. FOR SUPPLIERS PAGE
+### 6. CONTACTS PAGE
+
+---
+
+# PAGE 1: HOME PAGE
+
+## NAVIGATION BAR (Fixed Top)
+**Background**: White with shadow on scroll
+**Layout**: Logo (left) | Menu Items (center) | WhatsApp Icon + Phone (right)
+
+**Menu Items**:
+- Home
+- About Us
+- Brands
+- For Customers
+- For Suppliers
+- Contacts
+
+**Contact**: 
+- WhatsApp Icon (green) + +971507363657
+
+---
+
+## HERO SECTION (Above the Fold)
+
+### HERO SLIDER (Full width, 700px height)
+**Background**: Dark overlay with animated gradient (#1F3044 to #2A3F5A)
+
+**Slide 1**:
+- **Tag**: "Global Auto Parts Excellence" (Orange badge)
+- **Headline**: "Premium Automotive Spare Parts"
+- **Subtext**: "Wholesale supplier from Dubai to all around the world"
+- **CTA Buttons**: 
+  - "Request Quote" (Orange #FB9039)
+  - "View Catalog" (Outlined white)
+
+**Slide 2**:
+- **Tag**: "Trusted Worldwide" (Orange badge)
+- **Headline**: "Authentic OEM & Aftermarket Parts"
+- **Subtext**: "Serving 85+ countries with quality and reliability"
+- **CTA Buttons**: Same as above
+
+**Slide 3**:
+- **Tag**: "Fast & Reliable" (Orange badge)
+- **Headline**: "Your Global Parts Partner"
+- **Subtext**: "15+ years of excellence in automotive distribution"
+- **CTA Buttons**: Same as above
+
+---
+
+## 4 FEATURE CARDS (Below Hero - Above the Fold)
+
+### SECTION TITLE
+**Headline**: "Why Choose Ikigai Autospare?"
+**Subtext**: "Your trusted partner for quality auto parts worldwide"
+
+### CARD 1: ABOUT COMPANY
+**Icon**: Building/Company icon (Orange)
+**Title**: "About Ikigai Autospare"
+**Description**: "Leading wholesale supplier of premium automotive spare parts based in Dubai. With over 15 years of experience, we've built a reputation for quality, authenticity, and reliability in the global auto parts industry."
+**CTA**: "Learn More →"
+**Link**: /about-us
+
+### CARD 2: SPARE PARTS SUPPLY
+**Icon**: Package/Box icon (Orange)
+**Title**: "Extensive Spare Parts Inventory"
+**Description**: "Access to over 50,000+ genuine OEM and premium aftermarket parts for all major vehicle brands. From engine components to electrical systems, we have everything you need for complete automotive solutions."
+**CTA**: "Explore Parts →"
+**Link**: /brands
+
+### CARD 3: GLOBAL DISTRIBUTION
+**Icon**: Globe/Shipping icon (Orange)
+**Title**: "Worldwide Export Services"
+**Description**: "Efficient logistics and shipping solutions to 85+ countries worldwide. Fast processing, competitive rates, and reliable delivery ensure your parts arrive on time, every time."
+**CTA**: "For Customers →"
+**Link**: /for-customers
+
+### CARD 4: BULK ORDERS & WHOLESALE
+**Icon**: Warehouse/Bulk icon (Orange)
+**Title**: "Wholesale & Bulk Solutions"
+**Description**: "Competitive pricing for dealerships, repair shops, and automotive businesses. Special rates for bulk orders, flexible payment terms, and dedicated account management for trade partners."
+**CTA**: "Partner With Us →"
+**Link**: /for-suppliers
+
+---
+
+## STATS SECTION
+**Background**: Navy (#1F3044)
+**Text**: White
+
+**4 Statistics**:
+1. **15+** Years Experience
+2. **50,000+** Parts Available
+3. **85+** Countries Served
+4. **10,000+** Happy Clients
+
+---
+
+## BRANDS WE SUPPLY SECTION
+**Background**: White
+**Headline**: "Brands We Supply"
+**Subtext**: "Premium parts for all major automotive manufacturers"
+
+**Brand Grid** (12 brands):
+- Toyota
+- Honda
+- Nissan
+- Hyundai
+- Kia
+- Mercedes-Benz
+- BMW
+- Audi
+- Volkswagen
+- Ford
+- Chevrolet
+- Mitsubishi
+
+**Each brand card**: Light gray background, hover effect (orange border)
+**CTA**: "View All Brands →" (Links to Brands page)
+
+---
+
+## SERVICES OVERVIEW
+**Background**: Light Gray (#F5F5F5)
+**Headline**: "Our Services"
+**Subtext**: "Comprehensive auto parts solutions for your business"
+
+**4 Service Cards**:
+
+1. **Genuine OEM Parts**
+   - Icon: Shield/Check
+   - Description: Authentic manufacturer parts with warranty
+
+2. **Quality Aftermarket**
+   - Icon: Star/Quality
+   - Description: Premium aftermarket alternatives, tested & certified
+
+3. **Fast Shipping**
+   - Icon: Truck/Speed
+   - Description: Worldwide delivery with tracking
+
+4. **Technical Support**
+   - Icon: Headset/Support
+   - Description: Expert assistance for part identification
+
+---
+
+## HOW IT WORKS SECTION
+**Background**: White
+**Headline**: "Simple Ordering Process"
+
+**4 Steps** (with numbers):
+1. **Request Quote** - Send your parts list
+2. **Get Pricing** - Receive competitive quote within 24hrs
+3. **Place Order** - Confirm and process payment
+4. **Fast Delivery** - Parts shipped to your location
+
+---
+
+## TESTIMONIALS SECTION
+**Background**: Navy (#1F3044)
+**Headline**: "What Our Clients Say"
+
+**3 Testimonials** (Slider):
+- Client name, Company, Country
+- Star rating
+- Testimonial text
+
+---
+
+## CTA SECTION
+**Background**: Orange (#FB9039)
+**Headline**: "Ready to Get Started?"
+**Subtext**: "Contact us today for competitive pricing and fast delivery"
+**CTA Buttons**: 
+- "Request Quote" (White with navy text)
+- "Contact Us" (Outlined white)
+
+---
+
+## FOOTER
+**Background**: Navy (#1F3044)
+**Text**: White/Light gray
+
+**Column 1 - Company**:
+- Logo
+- Tagline: "Your global automotive parts partner"
+- Contact: info@ikigaiautoparts.com
+- Phone: +971507363657
+
+**Column 2 - Quick Links**:
+- Home
+- About Us
+- Brands
+- For Customers
+
+**Column 3 - Resources**:
+- For Suppliers
+- Request Quote
+- Shipping Info
+- Privacy Policy
+
+**Column 4 - Location**:
+- Address: Dubai, UAE
+- Business Hours
+- Social Media Icons
+
+**Bottom**: Copyright © 2025 Ikigai Autospare Parts. All rights reserved.
+
+---
+
+# PAGE 2: ABOUT US
+
+## PAGE HERO
+**Background**: Navy gradient
+**Headline**: "About Ikigai Autospare Parts"
+**Subtext**: "Your trusted partner in automotive excellence"
+**Breadcrumb**: Home > About Us
+
+---
+
+## OUR STORY SECTION
+**Background**: White
+**Layout**: Text (60%) + Image/Illustration (40%)
+
+**Content**:
+"Founded in Dubai over 15 years ago, Ikigai Autospare Parts has grown from a local supplier to a globally recognized distributor of premium automotive components. Our name, 'Ikigai,' represents our purpose and passion—delivering excellence in every part we supply.
+
+We specialize in sourcing and distributing genuine OEM parts and high-quality aftermarket alternatives for all major vehicle brands. Our extensive network of manufacturers and strategic location in Dubai enables us to serve customers across continents with speed and reliability.
+
+Today, we proudly serve over 10,000 clients worldwide, including dealerships, repair shops, and automotive businesses, maintaining our commitment to quality, authenticity, and customer satisfaction."
+
+---
+
+## MISSION, VISION, VALUES
+**Background**: Light Gray
+**Layout**: 3 cards side by side
+
+### MISSION
+**Icon**: Target
+"To provide the automotive industry with premium quality parts, exceptional service, and competitive pricing while building lasting partnerships worldwide."
+
+### VISION
+**Icon**: Eye/Binoculars
+"To be the world's most trusted supplier of automotive spare parts, recognized for quality, reliability, and innovation in global distribution."
+
+### VALUES
+**Icon**: Heart/Star
+- Quality First
+- Customer Focus
+- Integrity & Trust
+- Innovation
+- Global Partnership
+
+---
+
+## WHY CHOOSE US
+**Background**: White
+**Headline**: "Why Ikigai Autospare?"
+
+**6 Features** (Icon + Title + Description):
+1. **Guaranteed Authenticity** - All parts sourced from certified manufacturers
+2. **Extensive Inventory** - 50,000+ parts available for immediate dispatch
+3. **Global Reach** - Serving 85+ countries with efficient logistics
+4. **Fast Processing** - Quick order fulfillment and worldwide shipping
+5. **Expert Team** - Knowledgeable staff for technical support
+6. **Competitive Pricing** - Best rates for bulk and trade orders
+
+---
+
+## OUR CERTIFICATIONS
+**Background**: Light Gray
+**Headline**: "Quality You Can Trust"
+**Icons/Badges**: ISO certified, Quality assurance badges
+
+---
+
+## TEAM SECTION (Optional)
+**Background**: White
+**Headline**: "Meet Our Team"
+**3-4 team members** with photos, names, positions
+
+---
+
+## CTA SECTION
+**Background**: Orange
+**Headline**: "Partner With Us Today"
+**CTA**: "Get In Touch"
+
+---
+
+# PAGE 3: BRANDS
+
+## PAGE HERO
+**Background**: Navy gradient
+**Headline**: "Brands We Supply"
+**Subtext**: "Premium parts for all major automotive manufacturers"
+**Breadcrumb**: Home > Brands
+
+---
+
+## INTRO SECTION
+**Background**: White
+**Headline**: "Complete Brand Coverage"
+**Text**: "We supply genuine OEM and premium aftermarket parts for all major vehicle brands. Our extensive inventory ensures you get the right part for every application, backed by quality guarantees and technical support."
+
+---
+
+## BRANDS GRID
+**Background**: Light Gray
+**Layout**: 4 columns x 4 rows (responsive)
+
+**Each brand card includes**:
+- Brand name (large, bold)
+- "View Parts →" link
+- Hover effect: Orange border
+
+### ASIAN BRANDS
+- Toyota
+- Honda
+- Nissan
+- Hyundai
+- Kia
+- Mazda
+- Suzuki
+- Mitsubishi
+- Subaru
+- Isuzu
+- Daihatsu
+- Lexus
+
+### EUROPEAN BRANDS
+- Mercedes-Benz
+- BMW
+- Audi
+- Volkswagen
+- Porsche
+- Volvo
+- Land Rover
+- Jaguar
+- Renault
+- Peugeot
+- Fiat
+- Opel
+
+### AMERICAN BRANDS
+- Ford
+- Chevrolet
+- GMC
+- Dodge
+- Jeep
+- Cadillac
+- Chrysler
+- Buick
+
+---
+
+## PARTS CATEGORIES SECTION
+**Background**: White
+**Headline**: "Parts Categories Available"
+
+**Grid of categories** (8-12 categories):
+- Engine Components
+- Transmission Parts
+- Brake Systems
+- Suspension & Steering
+- Electrical Systems
+- Cooling Systems
+- Filters & Fluids
+- Body Parts
+- Interior Components
+- Exhaust Systems
+- Lighting
+- Air Conditioning
+
+---
+
+## OEM VS AFTERMARKET SECTION
+**Background**: Light Gray
+**Headline**: "OEM & Aftermarket Options"
+
+**Two columns**:
+
+**OEM Parts**:
+- Genuine manufacturer parts
+- Original specifications
+- Factory warranty
+- Premium quality
+- Higher price point
+
+**Aftermarket Parts**:
+- Certified quality alternatives
+- Cost-effective solutions
+- Tested & approved
+- Competitive warranty
+- Best value
+
+---
+
+## CTA SECTION
+**Background**: Orange
+**Headline**: "Can't Find Your Brand?"
+**Subtext**: "Contact us for special requests and rare parts sourcing"
+**CTA**: "Contact Us"
+
+---
+
+# PAGE 4: FOR CUSTOMERS
+
+## PAGE HERO
+**Background**: Navy gradient
+**Headline**: "Solutions For Customers"
+**Subtext**: "Quality parts delivered worldwide"
+**Breadcrumb**: Home > For Customers
+
+---
+
+## WHO WE SERVE
+**Background**: White
+**Headline**: "We Serve"
+
+**4 Customer Types** (Cards with icons):
+
+1. **Auto Repair Shops**
+   - Quick access to parts
+   - Competitive pricing
+   - Fast delivery
+   - Technical support
+
+2. **Dealerships**
+   - OEM parts supply
+   - Bulk ordering
+   - Account management
+   - Priority shipping
+
+3. **Fleet Managers**
+   - Regular supply contracts
+   - Volume discounts
+   - Predictable pricing
+   - Maintenance planning
+
+4. **Individual Buyers**
+   - Quality parts
+   - Expert advice
+   - Secure shipping
+   - After-sales support
+
+---
+
+## HOW TO ORDER
+**Background**: Light Gray
+**Headline**: "Simple Ordering Process"
+
+**Step-by-step** (5 steps with icons):
+
+1. **Submit Request**
+   - Send parts list via email/WhatsApp
+   - Include vehicle details (make, model, year, VIN)
+
+2. **Receive Quote**
+   - Get detailed quotation within 24 hours
+   - Competitive pricing with shipping costs
+
+3. **Confirm Order**
+   - Review and approve quote
+   - Multiple payment options available
+
+4. **Processing**
+   - Order processed immediately
+   - Quality check and packaging
+
+5. **Delivery**
+   - Worldwide shipping with tracking
+   - Receive your parts on time
+
+---
+
+## SHIPPING & DELIVERY
+**Background**: White
+**Headline**: "Global Shipping Solutions"
+
+**Features**:
+- **Worldwide Coverage**: 85+ countries
+- **Multiple Carriers**: DHL, FedEx, Aramex, Sea Freight
+- **Express Options**: 3-7 days air shipping
+- **Economy Options**: 15-30 days sea freight
+- **Track & Trace**: Real-time shipment tracking
+- **Insurance**: All shipments insured
+
+**Shipping destinations map** (visual element)
+
+---
+
+## PAYMENT OPTIONS
+**Background**: Light Gray
+**Headline**: "Flexible Payment Methods"
+
+**Accepted payments**:
+- Bank Transfer (Wire/SWIFT)
+- Credit/Debit Cards
+- PayPal
+- Trade Credit (approved accounts)
+- Letter of Credit (bulk orders)
+
+---
+
+## QUALITY GUARANTEE
+**Background**: White
+**Headline**: "Our Quality Promise"
+
+**4 Guarantees**:
+1. **Authentic Parts** - 100% genuine or certified aftermarket
+2. **Quality Inspection** - Every part checked before dispatch
+3. **Warranty Coverage** - Manufacturer warranty on all OEM parts
+4. **Return Policy** - 30-day return on defective items
+
+---
+
+## FAQ SECTION
+**Background**: Light Gray
+**Headline**: "Frequently Asked Questions"
+
+**Common Questions**:
+- How do I request a quote?
+- What information do I need to provide?
+- What are your payment terms?
+- How long does shipping take?
+- Do you offer warranty?
+- Can I return incorrect parts?
+- Do you ship to my country?
+- How can I track my order?
+
+---
+
+## CTA SECTION
+**Background**: Orange
+**Headline**: "Ready to Order?"
+**CTA**: "Request Quote Now" + "Contact Us"
+
+---
+
+# PAGE 5: FOR SUPPLIERS
+
+## PAGE HERO
+**Background**: Navy gradient
+**Headline**: "Partner With Ikigai Autospare"
+**Subtext**: "Expand your reach through our global distribution network"
+**Breadcrumb**: Home > For Suppliers
+
+---
+
+## WHY PARTNER WITH US
+**Background**: White
+**Headline**: "Why Become Our Supplier?"
+
+**6 Benefits** (Icon + Title + Description):
+
+1. **Global Market Access**
+   - Reach 85+ countries through our network
+   - Established customer base of 10,000+ clients
+
+2. **Volume Orders**
+   - Regular bulk purchases
+   - Consistent order flow
+   - Long-term contracts
+
+3. **Fair Pricing**
+   - Competitive rates
+   - Transparent negotiations
+   - Win-win partnerships
+
+4. **Fast Payments**
+   - Reliable payment schedules
+   - Multiple payment methods
+   - Financial stability
+
+5. **Quality Standards**
+   - Clear specifications
+   - Quality control processes
+   - Feedback system
+
+6. **Marketing Support**
+   - Brand visibility
+   - Product promotion
+   - Market insights
+
+---
+
+## WHAT WE LOOK FOR
+**Background**: Light Gray
+**Headline**: "Supplier Requirements"
+
+**Criteria**:
+- **Quality Certification**: ISO or equivalent standards
+- **Production Capacity**: Ability to handle bulk orders
+- **Competitive Pricing**: Market-rate pricing structure
+- **Reliable Supply**: Consistent availability and delivery
+- **Documentation**: Complete product certifications
+- **Communication**: English-speaking support team
+
+---
+
+## PRODUCT CATEGORIES
+**Background**: White
+**Headline**: "Parts We Source"
+
+**Categories we purchase**:
+- Engine & Transmission Parts
+- Brake Systems
+- Suspension Components
+- Electrical Systems
+- Filters & Lubricants
+- Body Parts & Accessories
+- Lighting Systems
+- Cooling Systems
+- Steering Components
+- Exhaust Systems
+
+---
+
+## PARTNERSHIP PROCESS
+**Background**: Light Gray
+**Headline**: "How to Become a Supplier"
+
+**5 Steps**:
+
+1. **Initial Contact**
+   - Submit company profile
+   - Product catalog and certifications
+
+2. **Evaluation**
+   - Review of products and capabilities
+   - Quality assessment
+
+3. **Negotiation**
+   - Discuss terms and pricing
+   - Define product specifications
+
+4. **Agreement**
+   - Sign supply contract
+   - Setup account and systems
+
+5. **Ongoing Partnership**
+   - Regular orders
+   - Performance reviews
+   - Growth opportunities
+
+---
+
+## SUPPLIER BENEFITS
+**Background**: White
+**Headline**: "What You Get"
+
+**Features**:
+- Long-term contracts
+- Regular purchase orders
+- Market intelligence
+- Brand promotion
+- Professional relationship
+- Growth potential
+
+---
+
+## TESTIMONIALS
+**Background**: Light Gray
+**Headline**: "What Our Suppliers Say"
+
+**2-3 testimonials from existing suppliers**
+
+---
+
+## CTA SECTION
+**Background**: Navy
+**Headline**: "Interested in Partnering?"
+**Subtext**: "Send us your company profile and product catalog"
+**CTA**: "Become a Supplier" (Form/Email)
+
+---
+
+# PAGE 6: CONTACTS
+
+## PAGE HERO
+**Background**: Navy gradient
+**Headline**: "Get In Touch"
+**Subtext**: "We're here to help with all your auto parts needs"
+**Breadcrumb**: Home > Contacts
+
+---
+
+## CONTACT INFORMATION
+**Background**: White
+**Layout**: Split (Contact Form 60% | Contact Info 40%)
+
+### CONTACT DETAILS SIDEBAR
+
+**Office Address**:
+📍 Dubai, United Arab Emirates
+(Full address to be added)
+
+**Email**:
+✉️ info@ikigaiautoparts.com
+
+**Phone**:
+📞 +971507363657
+
+**WhatsApp**:
+💬 +971507363657
+
+**Business Hours**:
+🕒 Sunday - Thursday: 9:00 AM - 6:00 PM
+Friday - Saturday: Closed
+
+**Social Media**:
+- Facebook
+- Instagram
+- LinkedIn
+- WhatsApp Business
+
+---
+
+### CONTACT FORM
+
+**Form Fields**:
+- Full Name *
+- Email Address *
+- Phone Number *
+- Company Name
+- Country *
+- Subject *
+- Message *
+- [Submit Button - Orange]
+
+**Form Types** (Dropdown for Subject):
+- General Inquiry
+- Request Quote
+- Technical Support
+- Supplier Partnership
+- Customer Support
+- Other
+
+---
+
+## QUICK CONTACT CARDS
+**Background**: Light Gray
+**Headline**: "Choose How to Reach Us"
+
+**3 Cards**:
+
+1. **For Quotes**
+   📧 quotes@ikigaiautoparts.com
+   Response time: Within 24 hours
+
+2. **For Support**
+   📧 support@ikigaiautoparts.com
+   Response time: Within 12 hours
+
+3. **For Partnerships**
+   📧 partnerships@ikigaiautoparts.com
+   Response time: Within 48 hours
+
+---
+
+## MAP SECTION
+**Background**: White
+**Google Maps embed** showing Dubai location
+
+---
+
+## FAQ QUICK LINKS
+**Background**: Light Gray
+**Headline**: "Need Quick Answers?"
+**Links to**: Common questions, Shipping info, Payment methods, Return policy
+
+---
+
+## CTA SECTION
+**Background**: Orange
+**Headline**: "Prefer to Talk?"
+**Subtext**: "Call us or message on WhatsApp for immediate assistance"
+**CTA**: WhatsApp button + Call button
+
+---
+
+# ADDITIONAL PAGES (Optional)
+
+## PRIVACY POLICY
+## TERMS & CONDITIONS
+## SHIPPING POLICY
+## RETURN POLICY
+## SITEMAP
+
+---
+
+# DESIGN SPECIFICATIONS
+
+## TYPOGRAPHY
+- **Headings**: Bold, Sans-serif (Montserrat/Poppins)
+- **Body**: Regular, Sans-serif (Open Sans/Roboto)
+- **H1**: 48px
+- **H2**: 36px
+- **H3**: 28px
+- **Body**: 16px
+- **Small**: 14px
+
+## SPACING
+- Section padding: 80px top/bottom
+- Container max-width: 1200px
+- Grid gap: 30px
+- Card padding: 30px
+
+## BUTTONS
+- **Primary**: Orange (#FB9039), white text, rounded corners
+- **Secondary**: Navy (#1F3044), white text
+- **Outlined**: Border only, navy/white
+- **Hover**: Slight scale (1.05), shadow
+
+## CARDS
+- Background: White
+- Border: 1px light gray
+- Hover: Shadow, orange border-top
+- Border-radius: 8px
+
+## ANIMATIONS
+- Fade in on scroll
+- Hover effects
+- Smooth transitions (0.3s)
+- Slider auto-play (5s interval)
+
+---
+
+# RESPONSIVE BREAKPOINTS
+- Mobile: 320px - 767px
+- Tablet: 768px - 1024px
+- Desktop: 1025px+
+
+---
+
+# SEO REQUIREMENTS
+
+## Meta Tags (Each Page):
+- Title (60 chars)
+- Description (160 chars)
+- Keywords
+- OG tags for social sharing
+
+## Content:
+- H1-H6 hierarchy
+- Alt tags on images
+- Internal linking
+- Schema markup
+
+---
+
+# IMAGES NEEDED
+
+1. Hero slider backgrounds (3 images - cars/parts/warehouse)
+2. About us - team/office photos
+3. Brand logos (all automotive brands)
+4. Service icons
+5. Parts categories images
+6. Testimonial photos
+7. Location/office images
+
+---
+
+
+---
+
+
+
+**END OF DOCUMENT**
+
+This complete structure provides all content, design specs, and development requirements for the Ikigai Autospare Parts website.

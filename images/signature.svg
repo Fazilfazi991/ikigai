@@ -1,0 +1,4 @@
+<svg width="300" height="100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20,50 Q60,10 80,50 T150,50 T220,50 T280,50" stroke="#1F3044" stroke-width="3" fill="none" />
+  <text x="150" y="80" font-family="Cursive" font-size="24" fill="#1F3044" text-anchor="middle">Founder Signature</text>
+</svg>

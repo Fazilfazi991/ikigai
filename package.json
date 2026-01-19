@@ -1,0 +1,12 @@
+{
+  "name": "ikigai-autospare",
+  "version": "1.0.0",
+  "description": "Ikigai Autospare Parts - Premium Automotive Spare Parts Supplier",
+  "scripts": {
+    "dev": "bun run server.js",
+    "start": "bun run server.js"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  }
+}

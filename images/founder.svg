@@ -1,0 +1,6 @@
+<svg width="600" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#E0E0E0" />
+  <circle cx="300" cy="300" r="120" fill="#646C79" />
+  <path d="M150,800 Q300,500 450,800" fill="#646C79" />
+  <text x="50%" y="50%" font-family="Arial" font-size="30" fill="#1F3044" text-anchor="middle" dominant-baseline="middle">Founder Image</text>
+</svg>
