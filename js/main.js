@@ -1,5 +1,5 @@
 // ===================================
-// IKIGAI AUTOSPARE PARTS - MAIN JAVASCRIPT
+// IKIGAI AUTO PARTS - MAIN JAVASCRIPT
 // ===================================
 
 document.addEventListener('DOMContentLoaded', function () {
