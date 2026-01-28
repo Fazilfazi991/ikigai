@@ -598,6 +598,64 @@ p {
   margin-top: 40px;
 }
 
+/* ===== MARQUEE BRANDS ===== */
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee-content {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+.marquee-content .brand-card {
+  margin: 0 20px;
+  width: 160px;
+  height: 100px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.marquee-content img {
+  max-width: 80%;
+  max-height: 60%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: var(--transition);
+  opacity: 0.7;
+}
+
+.marquee-content .brand-card:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .brand-card {
   background: var(--light-gray);
   padding: 15px;
