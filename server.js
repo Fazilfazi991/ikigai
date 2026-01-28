@@ -23,4 +23,4 @@ const server = Bun.serve({
   },
 });
 
-console.log(`🚀 Ikigai Auto Parts website running at http://localhost:${server.port}`);
+console.log(`🚀 IKIGAI Auto Parts website running at http://localhost:${server.port}`);
