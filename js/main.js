@@ -149,6 +149,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const email = this.querySelector('input[name="email"]');
             const phone = this.querySelector('input[name="phone"]');
             const message = this.querySelector('textarea[name="message"]');
+            const attachment = this.querySelector('input[name="attachment"]');
 
             let isValid = true;
 
@@ -179,6 +180,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 message.focus();
                 isValid = false;
                 return;
+            }
+
+            if (attachment && attachment.files.length > 0) {
+                const file = attachment.files[0];
+                const maxSize = 10 * 1024 * 1024; // 10MB
+
+                if (file.size > maxSize) {
+                    alert('File size exceeds 10MB limit');
+                    attachment.value = ''; // Clear the input
+                    isValid = false;
+                    return;
+                }
             }
 
             if (isValid) {
