@@ -260,7 +260,7 @@ p {
 }
 
 .logo img {
-  height: 50px;
+  height: 70px;
   width: auto;
   display: block;
 }
@@ -886,10 +886,14 @@ p {
   margin-bottom: 15px;
   display: flex;
   align-items: center;
+  background: var(--white);
+  padding: 10px;
+  border-radius: 8px;
+  width: fit-content;
 }
 
 .footer-logo img {
-  height: 60px;
+  height: 85px;
   width: auto;
   display: block;
 }
