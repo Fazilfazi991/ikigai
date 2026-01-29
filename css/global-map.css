@@ -1,0 +1,49 @@
+/* Global Reach Map */
+.map-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 40px auto 0;
+}
+
+.global-map {
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+    display: block;
+}
+
+.map-dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-navy);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.map-dot::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-orange);
+    border-radius: 50%;
+    z-index: -1;
+    animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+@keyframes pulse-ring {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(5);
+        opacity: 0;
+    }
+}
