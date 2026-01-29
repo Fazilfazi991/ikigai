@@ -102,35 +102,47 @@
         </div>
     </section>
 
-    <!-- LOCATIONS -->
+    <!-- APPLY NOW -->
     <section class="section" style="background: var(--light-gray);">
         <div class="container">
             <div class="section-title">
-                <h2>We Are Hiring In</h2>
-                <p>Join our teams across the globe</p>
+                <h2>Join Our Team</h2>
+                <p>Apply now to be part of our global family</p>
             </div>
 
-            <div class="features-grid">
-                <div class="feature-card fade-in">
-                    <div class="feature-icon"><i class="fas fa-map-marker-alt"></i></div>
-                    <h3>India</h3>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon"><i class="fas fa-map-marker-alt"></i></div>
-                    <h3>GCC</h3>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon"><i class="fas fa-map-marker-alt"></i></div>
-                    <h3>Singapore</h3>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon"><i class="fas fa-map-marker-alt"></i></div>
-                    <h3>Malaysia</h3>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon"><i class="fas fa-map-marker-alt"></i></div>
-                    <h3>China</h3>
-                </div>
+            <div class="contact-form" style="max-width: 800px; margin: 0 auto;">
+                <form action="#" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" name="name" required placeholder="Enter your full name">
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div class="form-group">
+                            <label>Nationality</label>
+                            <input type="text" name="nationality" required placeholder="Your nationality">
+                        </div>
+                        <div class="form-group">
+                            <label>Current Country</label>
+                            <input type="text" name="country" required placeholder="Where are you currently based?">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Qualification</label>
+                        <input type="text" name="qualification" required placeholder="Highest academic qualification">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Upload Resume</label>
+                        <input type="file" name="resume" required accept=".pdf,.doc,.docx" style="background: white;">
+                        <small style="color: var(--accent-gray);">Accepted formats: PDF, DOC, DOCX</small>
+                    </div>
+
+                    <div class="text-center" style="margin-top: 30px;">
+                        <button type="submit" class="btn btn-primary">Submit Application</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
