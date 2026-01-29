@@ -421,11 +421,11 @@ p {
 }
 
 .hero-slide:nth-child(1)::before {
-  background-image: url('../images/home-banner-1.png');
+  background-image: url('../images/home-banner-new-1.png');
 }
 
 .hero-slide:nth-child(2)::before {
-  background-image: url('../images/home-banner-2.jpg');
+  background-image: url('../images/home-banner-new-2.jpg');
 }
 
 .hero-content {
