@@ -775,23 +775,12 @@ p {
 }
 
 .testimonial-slider {
-  display: flex;
-  overflow-x: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  padding-bottom: 20px;
-  scroll-snap-type: x mandatory;
   width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
-  text-align: left;
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
-}
-
-.testimonial-slider::-webkit-scrollbar {
-  display: none;
 }
 
 .testimonial-card {
@@ -799,10 +788,8 @@ p {
   padding: 30px;
   border-radius: 12px;
   backdrop-filter: blur(10px);
-  min-width: 300px;
-  flex: 0 0 auto;
-  scroll-snap-align: center;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  height: 100%;
 }
 
 .testimonial-stars {
