@@ -198,19 +198,61 @@
       </div>
 
       <div class="map-container fade-in">
-        <img src="images/world_connection.svg" alt="Global Map" class="global-map">
+        <div style="position: relative;">
+          <img src="images/world_connection.svg" alt="Global Map" class="global-map">
 
-        <!-- Animated Dots -->
-        <div class="map-dot" style="top: 32%; left: 22%;"></div> <!-- North America -->
-        <div class="map-dot" style="top: 45%; left: 28%;"></div> <!-- South America -->
-        <div class="map-dot" style="top: 28%; left: 49%;"></div> <!-- Europe -->
-        <div class="map-dot" style="top: 42%; left: 56%;"></div> <!-- Middle East -->
-        <div class="map-dot" style="top: 55%; left: 53%;"></div> <!-- Africa -->
-        <div class="map-dot" style="top: 35%; left: 74%;"></div> <!-- Asia -->
-        <div class="map-dot" style="top: 75%; left: 85%;"></div> <!-- Australia -->
+          <!-- Connection Lines SVG -->
+          <svg class="map-lines" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <!-- From UAE (56, 42) -->
+            <path d="M56 42 L22 32" /> <!-- NA -->
+            <path d="M56 42 L28 45" /> <!-- SA -->
+            <path d="M56 42 L49 28" /> <!-- EU -->
+            <path d="M56 42 L53 55" /> <!-- AF -->
+            <path d="M56 42 L74 35" /> <!-- AS -->
+            <path d="M56 42 L85 75" /> <!-- AU -->
+          </svg>
+
+          <!-- Animated Dots & Labels -->
+          <div class="map-point" style="top: 42%; left: 56%;">
+            <div class="map-dot hq"></div>
+            <span class="map-label hq-label">DUBAI (HQ)</span>
+          </div>
+
+          <div class="map-point" style="top: 32%; left: 22%;">
+            <div class="map-dot"></div>
+            <span class="map-label">USA</span>
+          </div>
+
+          <div class="map-point" style="top: 45%; left: 28%;">
+            <div class="map-dot"></div>
+            <span class="map-label">Brazil</span>
+          </div>
+
+          <div class="map-point" style="top: 28%; left: 49%;">
+            <div class="map-dot"></div>
+            <span class="map-label">Germany</span>
+          </div>
+
+          <div class="map-point" style="top: 55%; left: 53%;">
+            <div class="map-dot"></div>
+            <span class="map-label">South Africa</span>
+          </div>
+
+          <div class="map-point" style="top: 35%; left: 74%;">
+            <div class="map-dot"></div>
+            <span class="map-label">China</span>
+          </div>
+
+          <div class="map-point" style="top: 75%; left: 85%;">
+            <div class="map-dot"></div>
+            <span class="map-label">Australia</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
+
 
   <!-- BRANDS SECTION -->
   <section class="section">
@@ -425,61 +467,7 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <!-- Global Reach Map (Moved to Footer) -->
-      <div class="map-container fade-in" style="margin-bottom: 50px;">
-        <h3 style="text-align: center; color: var(--white); margin-bottom: 20px;">Our Global Reach</h3>
-        <div style="position: relative;">
-          <img src="images/world_connection.svg" alt="Global Map" class="global-map"
-            style="filter: brightness(0) invert(1); opacity: 0.5;">
 
-          <!-- Connection Lines SVG -->
-          <svg class="map-lines" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <!-- From UAE (56, 42) -->
-            <path d="M56 42 L22 32" /> <!-- NA -->
-            <path d="M56 42 L28 45" /> <!-- SA -->
-            <path d="M56 42 L49 28" /> <!-- EU -->
-            <path d="M56 42 L53 55" /> <!-- AF -->
-            <path d="M56 42 L74 35" /> <!-- AS -->
-            <path d="M56 42 L85 75" /> <!-- AU -->
-          </svg>
-
-          <!-- Animated Dots & Labels -->
-          <div class="map-point" style="top: 42%; left: 56%;">
-            <div class="map-dot hq"></div>
-            <span class="map-label hq-label">DUBAI (HQ)</span>
-          </div>
-
-          <div class="map-point" style="top: 32%; left: 22%;">
-            <div class="map-dot"></div>
-            <span class="map-label">USA</span>
-          </div>
-
-          <div class="map-point" style="top: 45%; left: 28%;">
-            <div class="map-dot"></div>
-            <span class="map-label">Brazil</span>
-          </div>
-
-          <div class="map-point" style="top: 28%; left: 49%;">
-            <div class="map-dot"></div>
-            <span class="map-label">Germany</span>
-          </div>
-
-          <div class="map-point" style="top: 55%; left: 53%;">
-            <div class="map-dot"></div>
-            <span class="map-label">South Africa</span>
-          </div>
-
-          <div class="map-point" style="top: 35%; left: 74%;">
-            <div class="map-dot"></div>
-            <span class="map-label">China</span>
-          </div>
-
-          <div class="map-point" style="top: 75%; left: 85%;">
-            <div class="map-dot"></div>
-            <span class="map-label">Australia</span>
-          </div>
-        </div>
-      </div>
 
 
       <div class="footer-content">
