@@ -315,4 +315,29 @@ document.addEventListener('DOMContentLoaded', function () {
     // Create WhatsApp button
     createWhatsAppButton();
 
+    // ===== MODAL LOGIC =====
+    window.openModal = function (modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+            modal.style.display = "block";
+            document.body.style.overflow = "hidden"; // Prevent background scrolling
+        }
+    };
+
+    window.closeModal = function (modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = ""; // Restore scrolling
+        }
+    };
+
+    // Close modal when clicking outside
+    window.onclick = function (event) {
+        if (event.target.classList.contains('modal')) {
+            event.target.style.display = "none";
+            document.body.style.overflow = ""; // Restore scrolling
+        }
+    };
+
 });

@@ -87,58 +87,527 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
 
                 <!-- Article 1 -->
-                <div class="feature-card fade-in" style="text-align: left; padding: 0; overflow: hidden;">
-                    <div
-                        style="background: var(--light-gray); height: 200px; display: flex; align-items: center; justify-content: center; color: var(--accent-gray);">
-                        <i class="fas fa-cogs" style="font-size: 48px;"></i>
-                    </div>
-                    <div style="padding: 25px;">
-                        <span
-                            style="font-size: 12px; color: var(--secondary-orange); font-weight: bold; text-transform: uppercase;">Tech
-                            & Safety</span>
-                        <h3 style="margin: 10px 0; font-size: 20px;">The Importance of Genuine Parts</h3>
-                        <p style="margin-bottom: 20px;">Why choosing OEM original parts over cheap generic alternatives
-                            is crucial for vehicle longevity, performance, and most importantly, safety.</p>
-                        <a href="#" style="color: var(--primary-navy); font-weight: 600; text-decoration: none;">Read
-                            More <i class="fas fa-arrow-right" style="font-size: 12px;"></i></a>
+                <div class="feature-card fade-in" style="text-align: left; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                    
+                <div style="background: var(--light-gray); height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <img src="images/blogs/BLOGS.pdf-image-000.jpg" alt="Driving Quality, Delivering Globally" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            
+                    <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span style="font-size: 12px; color: var(--secondary-orange); font-weight: bold; text-transform: uppercase;">Insights</span>
+                        <h3 style="margin: 10px 0; font-size: 20px;">Driving Quality, Delivering Globally</h3>
+                        <p style="margin-bottom: 20px; flex-grow: 1;">Ikigai Auto Parts is a Dubai-based re-export company operating from Meydan Free Zone. We specialize in supplying genuine and aftermarket automotive spare parts to global markets.</p>
+                        <button onclick="openModal('modal-1')" style="background: none; border: none; padding: 0; color: var(--primary-navy); font-weight: 600; text-decoration: none; cursor: pointer; text-align: left;">
+                            Read More <i class="fas fa-arrow-right" style="font-size: 12px;"></i>
+                        </button>
                     </div>
                 </div>
 
+                <!-- Modal for Article 1 -->
+                <div id="modal-1" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.8);">
+                    <div class="modal-content" style="background-color: #fefefe; margin: 10% auto; padding: 40px; border: 1px solid #888; width: 80%; max-width: 800px; position: relative; border-radius: 8px;">
+                        <span class="close" onclick="closeModal('modal-1')" style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+                        <h2 style="color: var(--primary-navy); margin-bottom: 20px;">Driving Quality, Delivering Globally</h2>
+                        <img src="images/blogs/BLOGS.pdf-image-000.jpg" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 20px; border-radius: 4px;">
+                        <div style="line-height: 1.6; color: #333;">
+                            Ikigai Auto Parts is a Dubai-based re-export company operating from Meydan Free Zone. We specialize in supplying genuine and aftermarket automotive spare parts to global markets, ensuring quality, reliability, and competitive pricing.
+                        </div>
+                    </div>
+                </div>
+        
                 <!-- Article 2 -->
-                <div class="feature-card fade-in" style="text-align: left; padding: 0; overflow: hidden;">
-                    <div
-                        style="background: var(--light-gray); height: 200px; display: flex; align-items: center; justify-content: center; color: var(--accent-gray);">
-                        <i class="fas fa-shipping-fast" style="font-size: 48px;"></i>
-                    </div>
-                    <div style="padding: 25px;">
-                        <span
-                            style="font-size: 12px; color: var(--secondary-orange); font-weight: bold; text-transform: uppercase;">Logistics</span>
-                        <h3 style="margin: 10px 0; font-size: 20px;">Global Logistics Excellence</h3>
-                        <p style="margin-bottom: 20px;">How IKIGAI Auto Parts manages to ship to 85+ countries with
-                            precision packaging and real-time tracking, ensuring you get parts on time, every time.</p>
-                        <a href="#" style="color: var(--primary-navy); font-weight: 600; text-decoration: none;">Read
-                            More <i class="fas fa-arrow-right" style="font-size: 12px;"></i></a>
+                <div class="feature-card fade-in" style="text-align: left; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                    
+                <div style="background: var(--light-gray); height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <img src="images/blogs/BLOGS.pdf-image-001.jpg" alt="Why Dubai Is the Global Hub for Auto Parts Re-Export" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            
+                    <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span style="font-size: 12px; color: var(--secondary-orange); font-weight: bold; text-transform: uppercase;">Insights</span>
+                        <h3 style="margin: 10px 0; font-size: 20px;">Why Dubai Is the Global Hub for Auto Parts Re-Export</h3>
+                        <p style="margin-bottom: 20px; flex-grow: 1;">Dubai’s strategic location, advanced logistics, and free zones make it the ideal hub for automotive spare parts re-exports.</p>
+                        <button onclick="openModal('modal-2')" style="background: none; border: none; padding: 0; color: var(--primary-navy); font-weight: 600; text-decoration: none; cursor: pointer; text-align: left;">
+                            Read More <i class="fas fa-arrow-right" style="font-size: 12px;"></i>
+                        </button>
                     </div>
                 </div>
 
+                <!-- Modal for Article 2 -->
+                <div id="modal-2" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.8);">
+                    <div class="modal-content" style="background-color: #fefefe; margin: 10% auto; padding: 40px; border: 1px solid #888; width: 80%; max-width: 800px; position: relative; border-radius: 8px;">
+                        <span class="close" onclick="closeModal('modal-2')" style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+                        <h2 style="color: var(--primary-navy); margin-bottom: 20px;">Why Dubai Is the Global Hub for Auto Parts Re-Export</h2>
+                        <img src="images/blogs/BLOGS.pdf-image-001.jpg" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 20px; border-radius: 4px;">
+                        <div style="line-height: 1.6; color: #333;">
+                            Dubai’s strategic location, advanced logistics, and free zones make it the ideal hub for automotive spare parts re-exports. Ikigai Auto Parts leverages these advantages to serve customers across GCC, Asia, Europe, and Africa efficiently.
+                        </div>
+                    </div>
+                </div>
+        
                 <!-- Article 3 -->
-                <div class="feature-card fade-in" style="text-align: left; padding: 0; overflow: hidden;">
-                    <div
-                        style="background: var(--light-gray); height: 200px; display: flex; align-items: center; justify-content: center; color: var(--accent-gray);">
-                        <i class="fas fa-bolt" style="font-size: 48px;"></i>
-                    </div>
-                    <div style="padding: 25px;">
-                        <span
-                            style="font-size: 12px; color: var(--secondary-orange); font-weight: bold; text-transform: uppercase;">Future
-                            Trends</span>
-                        <h3 style="margin: 10px 0; font-size: 20px;">Future of Electric Vehicle Parts</h3>
-                        <p style="margin-bottom: 20px;">The automotive landscape is shifting. Discover how we are
-                            preparing our inventory to support the growing demand for EV components.</p>
-                        <a href="#" style="color: var(--primary-navy); font-weight: 600; text-decoration: none;">Read
-                            More <i class="fas fa-arrow-right" style="font-size: 12px;"></i></a>
+                <div class="feature-card fade-in" style="text-align: left; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                    
+                <div style="background: var(--light-gray); height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <img src="images/blogs/BLOGS.pdf-image-002.jpg" alt="Benefits of Buying Auto Parts from a Free Zone Company" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            
+                    <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span style="font-size: 12px; color: var(--secondary-orange); font-weight: bold; text-transform: uppercase;">Insights</span>
+                        <h3 style="margin: 10px 0; font-size: 20px;">Benefits of Buying Auto Parts from a Free Zone Company</h3>
+                        <p style="margin-bottom: 20px; flex-grow: 1;">Operating from Meydan Free Zone allows Ikigai Auto Parts to offer tax-efficient pricing, faster documentation, and smooth re-export processes.</p>
+                        <button onclick="openModal('modal-3')" style="background: none; border: none; padding: 0; color: var(--primary-navy); font-weight: 600; text-decoration: none; cursor: pointer; text-align: left;">
+                            Read More <i class="fas fa-arrow-right" style="font-size: 12px;"></i>
+                        </button>
                     </div>
                 </div>
 
+                <!-- Modal for Article 3 -->
+                <div id="modal-3" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.8);">
+                    <div class="modal-content" style="background-color: #fefefe; margin: 10% auto; padding: 40px; border: 1px solid #888; width: 80%; max-width: 800px; position: relative; border-radius: 8px;">
+                        <span class="close" onclick="closeModal('modal-3')" style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+                        <h2 style="color: var(--primary-navy); margin-bottom: 20px;">Benefits of Buying Auto Parts from a Free Zone Company</h2>
+                        <img src="images/blogs/BLOGS.pdf-image-002.jpg" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 20px; border-radius: 4px;">
+                        <div style="line-height: 1.6; color: #333;">
+                            Operating from Meydan Free Zone allows Ikigai Auto Parts to offer tax-efficient pricing, faster documentation, and smooth re-export processes—helping customers reduce overall procurement costs.
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Article 4 -->
+                <div class="feature-card fade-in" style="text-align: left; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                    
+                <div style="background: var(--light-gray); height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <img src="images/blogs/BLOGS.pdf-image-003.jpg" alt="Genuine vs Aftermarket Auto Parts: What Should You Choose?" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            
+                    <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span style="font-size: 12px; color: var(--secondary-orange); font-weight: bold; text-transform: uppercase;">Insights</span>
+                        <h3 style="margin: 10px 0; font-size: 20px;">Genuine vs Aftermarket Auto Parts: What Should You Choose?</h3>
+                        <p style="margin-bottom: 20px; flex-grow: 1;">Understanding the difference between genuine and aftermarket parts is crucial. Ikigai Auto Parts supplies both options.</p>
+                        <button onclick="openModal('modal-4')" style="background: none; border: none; padding: 0; color: var(--primary-navy); font-weight: 600; text-decoration: none; cursor: pointer; text-align: left;">
+                            Read More <i class="fas fa-arrow-right" style="font-size: 12px;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal for Article 4 -->
+                <div id="modal-4" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.8);">
+                    <div class="modal-content" style="background-color: #fefefe; margin: 10% auto; padding: 40px; border: 1px solid #888; width: 80%; max-width: 800px; position: relative; border-radius: 8px;">
+                        <span class="close" onclick="closeModal('modal-4')" style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+                        <h2 style="color: var(--primary-navy); margin-bottom: 20px;">Genuine vs Aftermarket Auto Parts: What Should You Choose?</h2>
+                        <img src="images/blogs/BLOGS.pdf-image-003.jpg" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 20px; border-radius: 4px;">
+                        <div style="line-height: 1.6; color: #333;">
+                            Understanding the difference between genuine and aftermarket parts is crucial. Ikigai Auto Parts supplies both options, helping customers select the right balance of quality, warranty, and cost.
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Article 5 -->
+                <div class="feature-card fade-in" style="text-align: left; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                    
+                <div style="background: var(--light-gray); height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <img src="images/blogs/BLOGS.pdf-image-004.jpg" alt="Japanese Auto Spare Parts We Supply Worldwide" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            
+                    <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span style="font-size: 12px; color: var(--secondary-orange); font-weight: bold; text-transform: uppercase;">Insights</span>
+                        <h3 style="margin: 10px 0; font-size: 20px;">Japanese Auto Spare Parts We Supply Worldwide</h3>
+                        <p style="margin-bottom: 20px; flex-grow: 1;">We specialize in Japanese brands such as Toyota, Nissan, Mitsubishi, Isuzu, and more—serving passenger vehicles and commercial fleets across international markets.</p>
+                        <button onclick="openModal('modal-5')" style="background: none; border: none; padding: 0; color: var(--primary-navy); font-weight: 600; text-decoration: none; cursor: pointer; text-align: left;">
+                            Read More <i class="fas fa-arrow-right" style="font-size: 12px;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal for Article 5 -->
+                <div id="modal-5" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.8);">
+                    <div class="modal-content" style="background-color: #fefefe; margin: 10% auto; padding: 40px; border: 1px solid #888; width: 80%; max-width: 800px; position: relative; border-radius: 8px;">
+                        <span class="close" onclick="closeModal('modal-5')" style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+                        <h2 style="color: var(--primary-navy); margin-bottom: 20px;">Japanese Auto Spare Parts We Supply Worldwide</h2>
+                        <img src="images/blogs/BLOGS.pdf-image-004.jpg" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 20px; border-radius: 4px;">
+                        <div style="line-height: 1.6; color: #333;">
+                            We specialize in Japanese brands such as Toyota, Nissan, Mitsubishi, Isuzu, and more—serving passenger vehicles and commercial fleets across international markets.
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Article 6 -->
+                <div class="feature-card fade-in" style="text-align: left; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                    
+                <div style="background: var(--light-gray); height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <img src="images/blogs/BLOGS.pdf-image-005.jpg" alt="Korean, American & European Auto Parts Under One Roof" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            
+                    <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span style="font-size: 12px; color: var(--secondary-orange); font-weight: bold; text-transform: uppercase;">Insights</span>
+                        <h3 style="margin: 10px 0; font-size: 20px;">Korean, American & European Auto Parts Under One Roof</h3>
+                        <p style="margin-bottom: 20px; flex-grow: 1;">Ikigai Auto Parts supplies Korean, American, and European automotive parts, offering a one-stop solution for global buyers.</p>
+                        <button onclick="openModal('modal-6')" style="background: none; border: none; padding: 0; color: var(--primary-navy); font-weight: 600; text-decoration: none; cursor: pointer; text-align: left;">
+                            Read More <i class="fas fa-arrow-right" style="font-size: 12px;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal for Article 6 -->
+                <div id="modal-6" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.8);">
+                    <div class="modal-content" style="background-color: #fefefe; margin: 10% auto; padding: 40px; border: 1px solid #888; width: 80%; max-width: 800px; position: relative; border-radius: 8px;">
+                        <span class="close" onclick="closeModal('modal-6')" style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+                        <h2 style="color: var(--primary-navy); margin-bottom: 20px;">Korean, American & European Auto Parts Under One Roof</h2>
+                        <img src="images/blogs/BLOGS.pdf-image-005.jpg" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 20px; border-radius: 4px;">
+                        <div style="line-height: 1.6; color: #333;">
+                            Ikigai Auto Parts supplies Korean, American, and European automotive parts, offering a one-stop solution for global buyers looking for diverse brands and models.
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Article 7 -->
+                <div class="feature-card fade-in" style="text-align: left; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                    
+                <div style="background: var(--light-gray); height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <img src="images/blogs/BLOGS.pdf-image-006.jpg" alt="Commercial Vehicle Spare Parts for Heavy-Duty Performance" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            
+                    <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span style="font-size: 12px; color: var(--secondary-orange); font-weight: bold; text-transform: uppercase;">Insights</span>
+                        <h3 style="margin: 10px 0; font-size: 20px;">Commercial Vehicle Spare Parts for Heavy-Duty Performance</h3>
+                        <p style="margin-bottom: 20px; flex-grow: 1;">We support trucks, buses, and heavy vehicles with durable spare parts designed for long-distance and high-load performance.</p>
+                        <button onclick="openModal('modal-7')" style="background: none; border: none; padding: 0; color: var(--primary-navy); font-weight: 600; text-decoration: none; cursor: pointer; text-align: left;">
+                            Read More <i class="fas fa-arrow-right" style="font-size: 12px;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal for Article 7 -->
+                <div id="modal-7" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.8);">
+                    <div class="modal-content" style="background-color: #fefefe; margin: 10% auto; padding: 40px; border: 1px solid #888; width: 80%; max-width: 800px; position: relative; border-radius: 8px;">
+                        <span class="close" onclick="closeModal('modal-7')" style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+                        <h2 style="color: var(--primary-navy); margin-bottom: 20px;">Commercial Vehicle Spare Parts for Heavy-Duty Performance</h2>
+                        <img src="images/blogs/BLOGS.pdf-image-006.jpg" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 20px; border-radius: 4px;">
+                        <div style="line-height: 1.6; color: #333;">
+                            We support trucks, buses, and heavy vehicles with durable spare parts designed for long-distance and high-load performance, meeting international quality standards.
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Article 8 -->
+                <div class="feature-card fade-in" style="text-align: left; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                    
+                <div style="background: var(--light-gray); height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <img src="images/blogs/BLOGS.pdf-image-007.jpg" alt="Our Global Export Network" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            
+                    <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span style="font-size: 12px; color: var(--secondary-orange); font-weight: bold; text-transform: uppercase;">Insights</span>
+                        <h3 style="margin: 10px 0; font-size: 20px;">Our Global Export Network</h3>
+                        <p style="margin-bottom: 20px; flex-grow: 1;">Ikigai Auto Parts exports to UAE, Kuwait, Oman, India, Singapore, Russia, Malaysia, Iran, Libya, Syria, and more.</p>
+                        <button onclick="openModal('modal-8')" style="background: none; border: none; padding: 0; color: var(--primary-navy); font-weight: 600; text-decoration: none; cursor: pointer; text-align: left;">
+                            Read More <i class="fas fa-arrow-right" style="font-size: 12px;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal for Article 8 -->
+                <div id="modal-8" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.8);">
+                    <div class="modal-content" style="background-color: #fefefe; margin: 10% auto; padding: 40px; border: 1px solid #888; width: 80%; max-width: 800px; position: relative; border-radius: 8px;">
+                        <span class="close" onclick="closeModal('modal-8')" style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+                        <h2 style="color: var(--primary-navy); margin-bottom: 20px;">Our Global Export Network</h2>
+                        <img src="images/blogs/BLOGS.pdf-image-007.jpg" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 20px; border-radius: 4px;">
+                        <div style="line-height: 1.6; color: #333;">
+                            Ikigai Auto Parts exports to UAE, Kuwait, Oman, India, Singapore, Russia, Malaysia, Iran, Libya, Syria, and more—building long-term partnerships worldwide.
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Article 9 -->
+                <div class="feature-card fade-in" style="text-align: left; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                    
+                <div style="background: var(--light-gray); height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <img src="images/blogs/BLOGS.pdf-image-008.jpg" alt="How We Ensure Quality in Every Shipment" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            
+                    <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span style="font-size: 12px; color: var(--secondary-orange); font-weight: bold; text-transform: uppercase;">Insights</span>
+                        <h3 style="margin: 10px 0; font-size: 20px;">How We Ensure Quality in Every Shipment</h3>
+                        <p style="margin-bottom: 20px; flex-grow: 1;">From supplier verification to packaging and inspection, quality control is at the core of Ikigai Auto Parts’ operations.</p>
+                        <button onclick="openModal('modal-9')" style="background: none; border: none; padding: 0; color: var(--primary-navy); font-weight: 600; text-decoration: none; cursor: pointer; text-align: left;">
+                            Read More <i class="fas fa-arrow-right" style="font-size: 12px;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal for Article 9 -->
+                <div id="modal-9" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.8);">
+                    <div class="modal-content" style="background-color: #fefefe; margin: 10% auto; padding: 40px; border: 1px solid #888; width: 80%; max-width: 800px; position: relative; border-radius: 8px;">
+                        <span class="close" onclick="closeModal('modal-9')" style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+                        <h2 style="color: var(--primary-navy); margin-bottom: 20px;">How We Ensure Quality in Every Shipment</h2>
+                        <img src="images/blogs/BLOGS.pdf-image-008.jpg" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 20px; border-radius: 4px;">
+                        <div style="line-height: 1.6; color: #333;">
+                            From supplier verification to packaging and inspection, quality control is at the core of Ikigai Auto Parts’ operations—ensuring customers receive dependable products every time.
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Article 10 -->
+                <div class="feature-card fade-in" style="text-align: left; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                    
+                <div style="background: var(--light-gray); height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <img src="images/blogs/BLOGS.pdf-image-009.jpg" alt="Fast & Reliable Logistics for International Buyers" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            
+                    <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span style="font-size: 12px; color: var(--secondary-orange); font-weight: bold; text-transform: uppercase;">Insights</span>
+                        <h3 style="margin: 10px 0; font-size: 20px;">Fast & Reliable Logistics for International Buyers</h3>
+                        <p style="margin-bottom: 20px; flex-grow: 1;">Our logistics expertise enables fast dispatch, accurate documentation, and secure packaging—minimizing delays and ensuring timely deliveries worldwide.</p>
+                        <button onclick="openModal('modal-10')" style="background: none; border: none; padding: 0; color: var(--primary-navy); font-weight: 600; text-decoration: none; cursor: pointer; text-align: left;">
+                            Read More <i class="fas fa-arrow-right" style="font-size: 12px;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal for Article 10 -->
+                <div id="modal-10" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.8);">
+                    <div class="modal-content" style="background-color: #fefefe; margin: 10% auto; padding: 40px; border: 1px solid #888; width: 80%; max-width: 800px; position: relative; border-radius: 8px;">
+                        <span class="close" onclick="closeModal('modal-10')" style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+                        <h2 style="color: var(--primary-navy); margin-bottom: 20px;">Fast & Reliable Logistics for International Buyers</h2>
+                        <img src="images/blogs/BLOGS.pdf-image-009.jpg" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 20px; border-radius: 4px;">
+                        <div style="line-height: 1.6; color: #333;">
+                            Our logistics expertise enables fast dispatch, accurate documentation, and secure packaging—minimizing delays and ensuring timely deliveries worldwide.
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Article 11 -->
+                <div class="feature-card fade-in" style="text-align: left; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                    
+                <div style="background: var(--light-gray); height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <img src="images/blogs/BLOGS.pdf-image-010.jpg" alt="Re-Export Solutions for GCC Countries" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            
+                    <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span style="font-size: 12px; color: var(--secondary-orange); font-weight: bold; text-transform: uppercase;">Insights</span>
+                        <h3 style="margin: 10px 0; font-size: 20px;">Re-Export Solutions for GCC Countries</h3>
+                        <p style="margin-bottom: 20px; flex-grow: 1;">We provide seamless re-export solutions for GCC clients, ensuring compliance, efficient customs handling, and competitive pricing.</p>
+                        <button onclick="openModal('modal-11')" style="background: none; border: none; padding: 0; color: var(--primary-navy); font-weight: 600; text-decoration: none; cursor: pointer; text-align: left;">
+                            Read More <i class="fas fa-arrow-right" style="font-size: 12px;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal for Article 11 -->
+                <div id="modal-11" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.8);">
+                    <div class="modal-content" style="background-color: #fefefe; margin: 10% auto; padding: 40px; border: 1px solid #888; width: 80%; max-width: 800px; position: relative; border-radius: 8px;">
+                        <span class="close" onclick="closeModal('modal-11')" style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+                        <h2 style="color: var(--primary-navy); margin-bottom: 20px;">Re-Export Solutions for GCC Countries</h2>
+                        <img src="images/blogs/BLOGS.pdf-image-010.jpg" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 20px; border-radius: 4px;">
+                        <div style="line-height: 1.6; color: #333;">
+                            We provide seamless re-export solutions for GCC clients, ensuring compliance, efficient customs handling, and competitive pricing without unnecessary delays.
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Article 12 -->
+                <div class="feature-card fade-in" style="text-align: left; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                    
+                <div style="background: var(--light-gray); height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <img src="images/blogs/BLOGS.pdf-image-013.jpg" alt="How Ikigai Auto Parts Supports Bulk Buyers & Wholesalers" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            
+                    <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span style="font-size: 12px; color: var(--secondary-orange); font-weight: bold; text-transform: uppercase;">Insights</span>
+                        <h3 style="margin: 10px 0; font-size: 20px;">How Ikigai Auto Parts Supports Bulk Buyers & Wholesalers</h3>
+                        <p style="margin-bottom: 20px; flex-grow: 1;">We cater to wholesalers, distributors, and fleet operators with bulk pricing, consolidated shipments, and flexible sourcing options.</p>
+                        <button onclick="openModal('modal-12')" style="background: none; border: none; padding: 0; color: var(--primary-navy); font-weight: 600; text-decoration: none; cursor: pointer; text-align: left;">
+                            Read More <i class="fas fa-arrow-right" style="font-size: 12px;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal for Article 12 -->
+                <div id="modal-12" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.8);">
+                    <div class="modal-content" style="background-color: #fefefe; margin: 10% auto; padding: 40px; border: 1px solid #888; width: 80%; max-width: 800px; position: relative; border-radius: 8px;">
+                        <span class="close" onclick="closeModal('modal-12')" style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+                        <h2 style="color: var(--primary-navy); margin-bottom: 20px;">How Ikigai Auto Parts Supports Bulk Buyers & Wholesalers</h2>
+                        <img src="images/blogs/BLOGS.pdf-image-013.jpg" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 20px; border-radius: 4px;">
+                        <div style="line-height: 1.6; color: #333;">
+                            We cater to wholesalers, distributors, and fleet operators with bulk pricing, consolidated shipments, and flexible sourcing options.
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Article 13 -->
+                <div class="feature-card fade-in" style="text-align: left; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                    
+                <div style="background: var(--light-gray); height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <img src="images/blogs/BLOGS.pdf-image-014.jpg" alt="Choosing the Right Auto Parts Supplier in Dubai" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            
+                    <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span style="font-size: 12px; color: var(--secondary-orange); font-weight: bold; text-transform: uppercase;">Insights</span>
+                        <h3 style="margin: 10px 0; font-size: 20px;">Choosing the Right Auto Parts Supplier in Dubai</h3>
+                        <p style="margin-bottom: 20px; flex-grow: 1;">Selecting a reliable supplier is critical. Ikigai Auto Parts stands out through transparency, product range, export expertise, and customer-focused service.</p>
+                        <button onclick="openModal('modal-13')" style="background: none; border: none; padding: 0; color: var(--primary-navy); font-weight: 600; text-decoration: none; cursor: pointer; text-align: left;">
+                            Read More <i class="fas fa-arrow-right" style="font-size: 12px;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal for Article 13 -->
+                <div id="modal-13" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.8);">
+                    <div class="modal-content" style="background-color: #fefefe; margin: 10% auto; padding: 40px; border: 1px solid #888; width: 80%; max-width: 800px; position: relative; border-radius: 8px;">
+                        <span class="close" onclick="closeModal('modal-13')" style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+                        <h2 style="color: var(--primary-navy); margin-bottom: 20px;">Choosing the Right Auto Parts Supplier in Dubai</h2>
+                        <img src="images/blogs/BLOGS.pdf-image-014.jpg" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 20px; border-radius: 4px;">
+                        <div style="line-height: 1.6; color: #333;">
+                            Selecting a reliable supplier is critical. Ikigai Auto Parts stands out through transparency, product range, export expertise, and customer-focused service.
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Article 14 -->
+                <div class="feature-card fade-in" style="text-align: left; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                    
+                <div style="background: var(--light-gray); height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <img src="images/blogs/BLOGS.pdf-image-015.jpg" alt="The Future of Automotive Spare Parts Trade" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            
+                    <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span style="font-size: 12px; color: var(--secondary-orange); font-weight: bold; text-transform: uppercase;">Insights</span>
+                        <h3 style="margin: 10px 0; font-size: 20px;">The Future of Automotive Spare Parts Trade</h3>
+                        <p style="margin-bottom: 20px; flex-grow: 1;">Digital sourcing, global demand, and efficient logistics are shaping the future of the auto parts industry. Ikigai Auto Parts continues to evolve.</p>
+                        <button onclick="openModal('modal-14')" style="background: none; border: none; padding: 0; color: var(--primary-navy); font-weight: 600; text-decoration: none; cursor: pointer; text-align: left;">
+                            Read More <i class="fas fa-arrow-right" style="font-size: 12px;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal for Article 14 -->
+                <div id="modal-14" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.8);">
+                    <div class="modal-content" style="background-color: #fefefe; margin: 10% auto; padding: 40px; border: 1px solid #888; width: 80%; max-width: 800px; position: relative; border-radius: 8px;">
+                        <span class="close" onclick="closeModal('modal-14')" style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+                        <h2 style="color: var(--primary-navy); margin-bottom: 20px;">The Future of Automotive Spare Parts Trade</h2>
+                        <img src="images/blogs/BLOGS.pdf-image-015.jpg" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 20px; border-radius: 4px;">
+                        <div style="line-height: 1.6; color: #333;">
+                            Digital sourcing, global demand, and efficient logistics are shaping the future of the auto parts industry. Ikigai Auto Parts continues to evolve to meet modern market needs.
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Article 15 -->
+                <div class="feature-card fade-in" style="text-align: left; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                    
+                <div style="background: var(--light-gray); height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <img src="images/blogs/BLOGS.pdf-image-016.jpg" alt="Why Customers Trust Ikigai Auto Parts" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            
+                    <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span style="font-size: 12px; color: var(--secondary-orange); font-weight: bold; text-transform: uppercase;">Insights</span>
+                        <h3 style="margin: 10px 0; font-size: 20px;">Why Customers Trust Ikigai Auto Parts</h3>
+                        <p style="margin-bottom: 20px; flex-grow: 1;">Trust is built through consistency, quality, and service. Ikigai Auto Parts is committed to long-term relationships and dependable supply chains.</p>
+                        <button onclick="openModal('modal-15')" style="background: none; border: none; padding: 0; color: var(--primary-navy); font-weight: 600; text-decoration: none; cursor: pointer; text-align: left;">
+                            Read More <i class="fas fa-arrow-right" style="font-size: 12px;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal for Article 15 -->
+                <div id="modal-15" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.8);">
+                    <div class="modal-content" style="background-color: #fefefe; margin: 10% auto; padding: 40px; border: 1px solid #888; width: 80%; max-width: 800px; position: relative; border-radius: 8px;">
+                        <span class="close" onclick="closeModal('modal-15')" style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+                        <h2 style="color: var(--primary-navy); margin-bottom: 20px;">Why Customers Trust Ikigai Auto Parts</h2>
+                        <img src="images/blogs/BLOGS.pdf-image-016.jpg" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 20px; border-radius: 4px;">
+                        <div style="line-height: 1.6; color: #333;">
+                            Trust is built through consistency, quality, and service. Ikigai Auto Parts is committed to long-term relationships and dependable supply chains.
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Article 16 -->
+                <div class="feature-card fade-in" style="text-align: left; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                    
+                <div style="background: var(--light-gray); height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <img src="images/blogs/BLOGS.pdf-image-017.png" alt="Strategic Partnership with Asian Distributors" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            
+                    <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span style="font-size: 12px; color: var(--secondary-orange); font-weight: bold; text-transform: uppercase;">Insights</span>
+                        <h3 style="margin: 10px 0; font-size: 20px;">Strategic Partnership with Asian Distributors</h3>
+                        <p style="margin-bottom: 20px; flex-grow: 1;">Accouncing a strategic partnership with Asian distributors for the supply of Japanese automotive spare parts.</p>
+                        <button onclick="openModal('modal-16')" style="background: none; border: none; padding: 0; color: var(--primary-navy); font-weight: 600; text-decoration: none; cursor: pointer; text-align: left;">
+                            Read More <i class="fas fa-arrow-right" style="font-size: 12px;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal for Article 16 -->
+                <div id="modal-16" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.8);">
+                    <div class="modal-content" style="background-color: #fefefe; margin: 10% auto; padding: 40px; border: 1px solid #888; width: 80%; max-width: 800px; position: relative; border-radius: 8px;">
+                        <span class="close" onclick="closeModal('modal-16')" style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+                        <h2 style="color: var(--primary-navy); margin-bottom: 20px;">Strategic Partnership with Asian Distributors</h2>
+                        <img src="images/blogs/BLOGS.pdf-image-017.png" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 20px; border-radius: 4px;">
+                        <div style="line-height: 1.6; color: #333;">
+                            We are pleased to announce that Ikigai Auto Parts has entered into a strategic partnership with Asian distributors for the supply of Japanese automotive spare parts.<br><br>This collaboration strengthens our sourcing network and enables us to offer a wider range of high-quality, reliable components at competitive prices to our global customers. With this partnership, we further reinforce our commitment to delivering trusted Japanese auto parts with efficiency, consistency, and international reach.<br><br>Ikigai Auto Parts<br>Driving Quality. Delivering Globally.
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Article 17 -->
+                <div class="feature-card fade-in" style="text-align: left; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                    
+                <div style="background: var(--light-gray); height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <img src="images/blogs/BLOGS.pdf-image-018.jpg" alt="Happy to Announce: Serving 1,000+ Valued Customers Worldwide" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            
+                    <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span style="font-size: 12px; color: var(--secondary-orange); font-weight: bold; text-transform: uppercase;">Insights</span>
+                        <h3 style="margin: 10px 0; font-size: 20px;">Happy to Announce: Serving 1,000+ Valued Customers Worldwide</h3>
+                        <p style="margin-bottom: 20px; flex-grow: 1;">We are proud to announce a major milestone in the journey of Ikigai Auto Parts — successfully reaching 1,000+ customers across global markets.</p>
+                        <button onclick="openModal('modal-17')" style="background: none; border: none; padding: 0; color: var(--primary-navy); font-weight: 600; text-decoration: none; cursor: pointer; text-align: left;">
+                            Read More <i class="fas fa-arrow-right" style="font-size: 12px;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal for Article 17 -->
+                <div id="modal-17" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.8);">
+                    <div class="modal-content" style="background-color: #fefefe; margin: 10% auto; padding: 40px; border: 1px solid #888; width: 80%; max-width: 800px; position: relative; border-radius: 8px;">
+                        <span class="close" onclick="closeModal('modal-17')" style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+                        <h2 style="color: var(--primary-navy); margin-bottom: 20px;">Happy to Announce: Serving 1,000+ Valued Customers Worldwide</h2>
+                        <img src="images/blogs/BLOGS.pdf-image-018.jpg" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 20px; border-radius: 4px;">
+                        <div style="line-height: 1.6; color: #333;">
+                            We are proud to announce a major milestone in the journey of Ikigai Auto Parts — successfully reaching 1,000+ customers across global markets.<br><br>What started as a focused vision to deliver quality automotive spare parts has grown into a trusted international supply network. From our base in Meydan Free Zone, Dubai, we now support customers across the GCC, Asia, Europe, and emerging markets, supplying reliable solutions for both commercial and non-commercial vehicles.<br><br>This achievement reflects the trust and confidence our customers place in us. Every order, inquiry, and long-term partnership has played a vital role in helping us reach this landmark.<br><br><strong>Our Commitment to Quality and Reliability</strong><br>At Ikigai Auto Parts, we believe growth is meaningful only when driven by consistency and value. Our success is built on:<br>• Supplying genuine and high-quality aftermarket spare parts<br>• Strong partnerships with global and Asian distributors<br>• Efficient re-export and logistics solutions<br>• Transparent communication and customer-focused service<br><br><strong>Looking Ahead</strong><br>Reaching 1,000 customers is not just a number—it’s a responsibility. As we continue to expand our product range and global reach, our commitment remains unchanged:<br>Driving Quality. Delivering Globally.<br><br>We sincerely thank our customers, partners, and team members for being part of this journey. We look forward to serving many more customers and building long-lasting partnerships worldwide.
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Article 18 -->
+                <div class="feature-card fade-in" style="text-align: left; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                    
+                <div style="background: var(--light-gray); height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <img src="images/blogs/BLOGS.pdf-image-019.jpg" alt="Requirements for Building Strong Business Relationships" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            
+                    <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span style="font-size: 12px; color: var(--secondary-orange); font-weight: bold; text-transform: uppercase;">Insights</span>
+                        <h3 style="margin: 10px 0; font-size: 20px;">Requirements for Building Strong Business Relationships</h3>
+                        <p style="margin-bottom: 20px; flex-grow: 1;">In today’s competitive global market, strong business relationships are the foundation of long-term success.</p>
+                        <button onclick="openModal('modal-18')" style="background: none; border: none; padding: 0; color: var(--primary-navy); font-weight: 600; text-decoration: none; cursor: pointer; text-align: left;">
+                            Read More <i class="fas fa-arrow-right" style="font-size: 12px;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal for Article 18 -->
+                <div id="modal-18" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.8);">
+                    <div class="modal-content" style="background-color: #fefefe; margin: 10% auto; padding: 40px; border: 1px solid #888; width: 80%; max-width: 800px; position: relative; border-radius: 8px;">
+                        <span class="close" onclick="closeModal('modal-18')" style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+                        <h2 style="color: var(--primary-navy); margin-bottom: 20px;">Requirements for Building Strong Business Relationships</h2>
+                        <img src="images/blogs/BLOGS.pdf-image-019.jpg" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 20px; border-radius: 4px;">
+                        <div style="line-height: 1.6; color: #333;">
+                            In today’s competitive global market, strong business relationships are the foundation of long-term success. At Ikigai Auto Parts, we believe that trust, consistency, and mutual growth are the cornerstones of every successful partnership. Building and maintaining strong relationships with customers, suppliers, and logistics partners requires intention, effort, and the right values.<br><br><strong>1. Trust and Transparency</strong><br>Trust is the most critical requirement in any business relationship. Clear communication, honest pricing, and transparent processes help build confidence and credibility over time. When partners know they can rely on accurate information, relationships naturally grow stronger.<br><br><strong>2. Consistent Quality and Reliability</strong><br>Consistency creates confidence. Delivering the right product, in the right condition, and on time—every time—demonstrates reliability. In the automotive spare parts industry, consistency in quality and supply is essential for long-term cooperation.<br><br><strong>3. Effective Communication</strong><br>Open and timely communication helps prevent misunderstandings and strengthens collaboration. Regular updates, prompt responses, and clear documentation ensure that expectations are aligned on both sides.<br><br><strong>4. Understanding Customer Needs</strong><br>Strong relationships are built by listening. Understanding the specific requirements of customers and partners allows businesses to offer tailored solutions rather than one-size-fits-all services. This approach leads to higher satisfaction and loyalty.<br><br><strong>5. Commitment to Long-Term Partnership</strong><br>Successful relationships are not built overnight. A long-term mindset—focused on growth, continuity, and mutual benefit—helps create partnerships that withstand market changes and challenges.<br><br><strong>6. Professionalism and Integrity</strong><br>Professional conduct and ethical business practices form the backbone of lasting relationships. Respect, accountability, and integrity foster a positive working environment and encourage repeat business.<br><br><strong>7. Adaptability and Support</strong><br>Markets evolve, and so do business needs. Being flexible and supportive during changing circumstances strengthens trust and shows commitment beyond transactions.<br><br><strong>Conclusion</strong><br>Building strong business relationships requires more than just successful transactions—it requires trust, consistency, communication, and a shared vision for growth. At Ikigai Auto Parts, we are committed to nurturing long-term relationships that create value for all stakeholders.<br>Driving Quality. Delivering Globally.
+                        </div>
+                    </div>
+                </div>
+        
             </div>
         </div>
     </section>
@@ -171,9 +640,12 @@
                     <p><i class="fas fa-envelope"></i> info@ikigaiautoparts.com</p>
                     <p><i class="fas fa-phone"></i> +971 50 736 3657</p>
                     <div class="social-links">
-                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61587175983598" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/ikigai_auto_parts/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/ikigai-auto-parts/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
                         <a href="https://wa.me/971507363657" target="_blank"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
