@@ -421,7 +421,7 @@ p {
 }
 
 .hero-slide:nth-child(1)::before {
-  background-image: url('../images/ikigai-banner-main.jpg');
+  background-image: url('../images/ikigai-banner-clean.jpg');
 }
 
 .hero-slide:nth-child(2)::before {
@@ -430,6 +430,33 @@ p {
 
 .hero-slide:nth-child(3)::before {
   background-image: url('../images/home-banner-new-2.jpg');
+}
+
+/* Main Slide Specific Styles */
+.hero-slide.hero-slide-main {
+  justify-content: flex-start;
+  padding-left: 10%;
+}
+
+.hero-slide-main .hero-content {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-logo-overlay {
+  width: 200px;
+  height: auto;
+  margin-bottom: 25px;
+  object-fit: contain;
+  /* Use filter if logo needs color adjustment on dark bg */
+  filter: brightness(0) invert(1);
+}
+
+/* Adjust buttons alignment for main slide */
+.hero-slide-main .hero-buttons {
+  justify-content: flex-start;
 }
 
 .hero-content {
