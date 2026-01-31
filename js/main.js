@@ -89,6 +89,25 @@ document.addEventListener('DOMContentLoaded', function () {
         heroSlider.addEventListener('mouseleave', startSlider);
     }
 
+    // Arrow Navigation
+    const prevBtn = document.querySelector('.hero-arrow.prev');
+    const nextBtn = document.querySelector('.hero-arrow.next');
+
+    if (prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', () => {
+            stopSlider();
+            currentSlide = (currentSlide - 1 + heroSlides.length) % heroSlides.length;
+            showSlide(currentSlide);
+            startSlider();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            stopSlider();
+            nextSlide();
+            startSlider();
+        });
+    }
+
     // ===== SCROLL ANIMATIONS =====
     const fadeElements = document.querySelectorAll('.fade-in');
 
