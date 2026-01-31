@@ -450,8 +450,6 @@ p {
   height: auto;
   margin-bottom: 25px;
   object-fit: contain;
-  /* Use filter if logo needs color adjustment on dark bg */
-  filter: brightness(0) invert(1);
 }
 
 /* Adjust buttons alignment for main slide */
