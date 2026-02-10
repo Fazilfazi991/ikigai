@@ -426,10 +426,14 @@ p {
 }
 
 .hero-slide:nth-child(2)::before {
-  background-image: url('../images/home-banner-new-1.png');
+  background-image: url('../images/home-banner-1.png');
 }
 
 .hero-slide:nth-child(3)::before {
+  background-image: url('../images/home-banner-new-1.png');
+}
+
+.hero-slide:nth-child(4)::before {
   background-image: url('../images/home-banner-new-2.jpg');
 }
 
