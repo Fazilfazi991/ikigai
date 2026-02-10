@@ -425,8 +425,9 @@ p {
   background-image: url('../images/ikigai-banner-clean.jpg');
 }
 
+/* Slide 2 is video-only, no background image */
 .hero-slide:nth-child(2)::before {
-  background-image: url('../images/home-banner-1.png');
+  display: none;
 }
 
 .hero-slide:nth-child(3)::before {
@@ -435,6 +436,10 @@ p {
 
 .hero-slide:nth-child(4)::before {
   background-image: url('../images/home-banner-new-2.jpg');
+}
+
+.hero-slide:nth-child(5)::before {
+  background-image: url('../images/home-banner-1.png');
 }
 
 /* Main Slide Specific Styles */
