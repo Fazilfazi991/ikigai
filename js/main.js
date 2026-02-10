@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function startSlider() {
         if (heroSlides.length > 0) {
             showSlide(0);
-            slideInterval = setInterval(nextSlide, 3000); // Change slide every 3 seconds
+            slideInterval = setInterval(nextSlide, 8000); // Change slide every 8 seconds
         }
     }
 
