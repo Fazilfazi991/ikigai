@@ -93,19 +93,33 @@ document.addEventListener('DOMContentLoaded', function () {
     const prevBtn = document.querySelector('.hero-arrow.prev');
     const nextBtn = document.querySelector('.hero-arrow.next');
 
+    console.log('Arrow buttons found:', { prevBtn, nextBtn });
+
     if (prevBtn && nextBtn) {
-        prevBtn.addEventListener('click', () => {
+        console.log('Attaching arrow event listeners...');
+
+        prevBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('Previous button clicked');
             stopSlider();
             currentSlide = (currentSlide - 1 + heroSlides.length) % heroSlides.length;
             showSlide(currentSlide);
             startSlider();
         });
 
-        nextBtn.addEventListener('click', () => {
+        nextBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('Next button clicked');
             stopSlider();
             nextSlide();
             startSlider();
         });
+
+        console.log('Arrow event listeners attached successfully');
+    } else {
+        console.error('Arrow buttons not found!');
     }
 
     // ===== SCROLL ANIMATIONS =====
