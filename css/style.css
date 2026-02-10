@@ -654,8 +654,9 @@ p {
 .marquee-content {
   display: flex;
   width: max-content;
-  animation: scroll 30s linear infinite;
+  animation: scroll 60s linear infinite;
 }
+
 
 .marquee-content:hover {
   animation-play-state: paused;
