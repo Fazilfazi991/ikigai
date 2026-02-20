@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     })
                     .catch((error) => {
                         console.log('FAILED...', error);
-                        alert('Oops! Something went wrong to send the email. Please try again later.');
+                        alert('Oops! Something went wrong to send the email: ' + (error.text || JSON.stringify(error)));
                     })
                     .finally(() => {
                         // Restore button state
