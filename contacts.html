@@ -74,7 +74,13 @@
                 <!-- Contact Form -->
                 <div class="contact-form">
                     <h3 style="margin-bottom: 25px; color: var(--primary-navy);">Send Us a Message</h3>
-                    <form id="contact-form">
+                    <form action="https://formsubmit.co/info@ikigaiautoparts.com" method="POST"
+                        enctype="multipart/form-data">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_subject" value="New submission from IKIGAI Auto Parts Contact Form">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="http://localhost:3000/contacts.html">
+                        <!-- Update this with actual domain once deployed -->
 
                         <div class="form-group">
                             <label for="name">Full Name *</label>
@@ -120,11 +126,11 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="attachment">Attach File (Max 50KB due to EmailJS limit)</label>
+                            <label for="attachment">Attach File (Max 10MB)</label>
                             <input type="file" id="attachment" name="attachment">
                         </div>
 
-                        <button type="submit" class="btn btn-primary" id="submit-button" style="width: 100%;">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
                             <i class="fas fa-paper-plane"></i> Send Message
                         </button>
                     </form>
@@ -321,10 +327,7 @@
                     <p><strong>Business Hours:</strong></p>
                     <p>Monday â€“ Friday: 9:00 AM â€“ 6:00 PM</p>
                     <p>Saturday â€“ Sunday: Office Closed</p>
-                    <<<<<<< HEAD <p>Service Available: 24/7</p>
-                        =======
-                        <p>Service Available: 24/7</p>
-                        >>>>>>> fd188a3 (feat: Integrate EmailJS into Contact Form)
+                    <p>Service Available: 24/7</p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -333,26 +336,7 @@
         </div>
     </footer>
 
-    <<<<<<< HEAD <script src="js/main.js">
-        </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
-
-
-=======
-<!-- EmailJS SDK -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script type="text/javascript">
-    (function () {
-        emailjs.init({
-            publicKey: "7q3Tl3r9M_yy1mb5a",
-        });
-    })();
-</script>
-
-<script src="js/main.js"></script>
-</body>
-
-</html>
->>>>>>> fd188a3 (feat: Integrate EmailJS into Contact Form)

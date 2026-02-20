@@ -170,22 +170,16 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // ===== FORM VALIDATION & EMAILJS SUBMISSION =====
-    const contactForm = document.getElementById('contact-form');
+    // ===== FORM VALIDATION =====
+    const contactForm = document.querySelector('.contact-form form');
 
     if (contactForm) {
         contactForm.addEventListener('submit', function (e) {
-            e.preventDefault(); // Stop default form submission
-
-            const submitBtn = document.getElementById('submit-button');
-            const originalBtnText = submitBtn.innerHTML;
-
             // Get form fields
             const name = this.querySelector('input[name="name"]');
             const email = this.querySelector('input[name="email"]');
             const phone = this.querySelector('input[name="phone"]');
             const message = this.querySelector('textarea[name="message"]');
-            const attachment = this.querySelector('input[name="attachment"]');
 
             let isValid = true;
 
@@ -206,135 +200,78 @@ document.addEventListener('DOMContentLoaded', function () {
                 alert('Please enter your message');
                 message.focus();
                 isValid = false;
-            } else if (attachment && attachment.files.length > 0) {
-                const file = attachment.files[0];
-                const maxSize = 50 * 1024; // 50KB for EmailJS Free Tier
-
-                if (file.size > maxSize) {
-                    alert('Due to server limits, attachments must be under 50KB. Please remove the file or upload a smaller one.');
-                    attachment.value = ''; // Clear the input
-                    isValid = false;
-                }
             }
 
-            if (isValid) {
-                // Update button state to show loading
-                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-                submitBtn.disabled = true;
+            if (!isValid) {
+                // Stop form submission if validation fails
+                e.preventDefault();
+            }
+            // If valid, allow the default form submission to FormSubmit.co
+        });
+    }
+});
 
-                const templateParams = {
-                    name: name ? name.value : '',
-                    email: email ? email.value : '',
-                    phone: phone ? phone.value : '',
-                    company: this.querySelector('input[name="company"]').value,
-                    country: this.querySelector('input[name="country"]').value,
-                    subject: this.querySelector('select[name="subject"]').value,
-                    message: message ? message.value : ''
-                };
+// Email validation helper
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}
 
-                // Function to handle the actual sending
-                const sendEmail = (params) => {
-                    emailjs.send('service_z884j6b', 'template_t4dc756', params)
-                        .then(() => {
-                            console.log('SUCCESS!');
-                            alert('Thank you for your message! We will contact you soon.');
-                            this.reset();
-                        })
-                        .catch((error) => {
-                            console.log('FAILED...', error);
-                            alert('Oops! Something went wrong to send the email: ' + (error.text || JSON.stringify(error)));
-                        })
-                        .finally(() => {
-                            // Restore button state
-                            submitBtn.innerHTML = originalBtnText;
-                            submitBtn.disabled = false;
-                        });
-                };
+// ===== COUNTER ANIMATION FOR STATS =====
+const stats = document.querySelectorAll('.stat-item h3');
+let statsAnimated = false;
 
-                if (attachment && attachment.files.length > 0) {
-                    // Convert file to base64
-                    const file = attachment.files[0];
-                    const reader = new FileReader();
-                    reader.readAsDataURL(file);
-                    reader.onload = function () {
-                        templateParams.attachment = reader.result; // add base64 string to params
-                        sendEmail(templateParams);
-                    };
-                    reader.onerror = function (error) {
-                        console.log('Error reading file: ', error);
-                        alert('Error attaching file. Please try submitting without the attachment.');
-                        submitBtn.innerHTML = originalBtnText;
-                        submitBtn.disabled = false;
-                    };
-                } else {
-                    // Send without attachment
-                    sendEmail(templateParams);
-                }
+function animateStats() {
+    if (statsAnimated) return;
+
+    stats.forEach(stat => {
+        const target = parseInt(stat.textContent);
+        const suffix = stat.textContent.replace(/[0-9,]/g, '');
+        let current = 0;
+        const increment = target / 50;
+        const duration = 2000;
+        const stepTime = duration / 50;
+
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                stat.textContent = target.toLocaleString() + suffix;
+                clearInterval(timer);
+            } else {
+                stat.textContent = Math.floor(current).toLocaleString() + suffix;
+            }
+        }, stepTime);
+    });
+
+    statsAnimated = true;
+}
+
+// Trigger stats animation when in view
+const statsSection = document.querySelector('.stats');
+if (statsSection) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateStats();
             }
         });
-    }
+    }, { threshold: 0.5 });
 
-    // Email validation helper
-    function validateEmail(email) {
-        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return re.test(email);
-    }
+    observer.observe(statsSection);
+}
 
-    // ===== COUNTER ANIMATION FOR STATS =====
-    const stats = document.querySelectorAll('.stat-item h3');
-    let statsAnimated = false;
+// ===== WHATSAPP FLOATING BUTTON =====
+function createWhatsAppButton() {
+    const whatsappBtn = document.createElement('a');
+    whatsappBtn.href = 'https://wa.me/971507363657';
+    whatsappBtn.target = '_blank';
+    whatsappBtn.className = 'whatsapp-float';
+    whatsappBtn.innerHTML = '<i class="fab fa-whatsapp"></i>';
+    whatsappBtn.title = 'Chat on WhatsApp';
 
-    function animateStats() {
-        if (statsAnimated) return;
-
-        stats.forEach(stat => {
-            const target = parseInt(stat.textContent);
-            const suffix = stat.textContent.replace(/[0-9,]/g, '');
-            let current = 0;
-            const increment = target / 50;
-            const duration = 2000;
-            const stepTime = duration / 50;
-
-            const timer = setInterval(() => {
-                current += increment;
-                if (current >= target) {
-                    stat.textContent = target.toLocaleString() + suffix;
-                    clearInterval(timer);
-                } else {
-                    stat.textContent = Math.floor(current).toLocaleString() + suffix;
-                }
-            }, stepTime);
-        });
-
-        statsAnimated = true;
-    }
-
-    // Trigger stats animation when in view
-    const statsSection = document.querySelector('.stats');
-    if (statsSection) {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateStats();
-                }
-            });
-        }, { threshold: 0.5 });
-
-        observer.observe(statsSection);
-    }
-
-    // ===== WHATSAPP FLOATING BUTTON =====
-    function createWhatsAppButton() {
-        const whatsappBtn = document.createElement('a');
-        whatsappBtn.href = 'https://wa.me/971507363657';
-        whatsappBtn.target = '_blank';
-        whatsappBtn.className = 'whatsapp-float';
-        whatsappBtn.innerHTML = '<i class="fab fa-whatsapp"></i>';
-        whatsappBtn.title = 'Chat on WhatsApp';
-
-        // Add styles
-        const style = document.createElement('style');
-        style.textContent = `
+    // Add styles
+    const style = document.createElement('style');
+    style.textContent = `
       .whatsapp-float {
         position: fixed;
         bottom: 30px;
@@ -380,12 +317,12 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     `;
 
-        document.head.appendChild(style);
-        document.body.appendChild(whatsappBtn);
-    }
+    document.head.appendChild(style);
+    document.body.appendChild(whatsappBtn);
+}
 
-    // Create WhatsApp button
-    createWhatsAppButton();
+// Create WhatsApp button
+createWhatsAppButton();
 
 
 
