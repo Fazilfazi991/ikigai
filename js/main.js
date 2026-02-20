@@ -209,69 +209,68 @@ document.addEventListener('DOMContentLoaded', function () {
             // If valid, allow the default form submission to FormSubmit.co
         });
     }
-});
 
-// Email validation helper
-function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-}
+    // Email validation helper
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
 
-// ===== COUNTER ANIMATION FOR STATS =====
-const stats = document.querySelectorAll('.stat-item h3');
-let statsAnimated = false;
+    // ===== COUNTER ANIMATION FOR STATS =====
+    const stats = document.querySelectorAll('.stat-item h3');
+    let statsAnimated = false;
 
-function animateStats() {
-    if (statsAnimated) return;
+    function animateStats() {
+        if (statsAnimated) return;
 
-    stats.forEach(stat => {
-        const target = parseInt(stat.textContent);
-        const suffix = stat.textContent.replace(/[0-9,]/g, '');
-        let current = 0;
-        const increment = target / 50;
-        const duration = 2000;
-        const stepTime = duration / 50;
+        stats.forEach(stat => {
+            const target = parseInt(stat.textContent);
+            const suffix = stat.textContent.replace(/[0-9,]/g, '');
+            let current = 0;
+            const increment = target / 50;
+            const duration = 2000;
+            const stepTime = duration / 50;
 
-        const timer = setInterval(() => {
-            current += increment;
-            if (current >= target) {
-                stat.textContent = target.toLocaleString() + suffix;
-                clearInterval(timer);
-            } else {
-                stat.textContent = Math.floor(current).toLocaleString() + suffix;
-            }
-        }, stepTime);
-    });
-
-    statsAnimated = true;
-}
-
-// Trigger stats animation when in view
-const statsSection = document.querySelector('.stats');
-if (statsSection) {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animateStats();
-            }
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    stat.textContent = target.toLocaleString() + suffix;
+                    clearInterval(timer);
+                } else {
+                    stat.textContent = Math.floor(current).toLocaleString() + suffix;
+                }
+            }, stepTime);
         });
-    }, { threshold: 0.5 });
 
-    observer.observe(statsSection);
-}
+        statsAnimated = true;
+    }
 
-// ===== WHATSAPP FLOATING BUTTON =====
-function createWhatsAppButton() {
-    const whatsappBtn = document.createElement('a');
-    whatsappBtn.href = 'https://wa.me/971507363657';
-    whatsappBtn.target = '_blank';
-    whatsappBtn.className = 'whatsapp-float';
-    whatsappBtn.innerHTML = '<i class="fab fa-whatsapp"></i>';
-    whatsappBtn.title = 'Chat on WhatsApp';
+    // Trigger stats animation when in view
+    const statsSection = document.querySelector('.stats');
+    if (statsSection) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateStats();
+                }
+            });
+        }, { threshold: 0.5 });
 
-    // Add styles
-    const style = document.createElement('style');
-    style.textContent = `
+        observer.observe(statsSection);
+    }
+
+    // ===== WHATSAPP FLOATING BUTTON =====
+    function createWhatsAppButton() {
+        const whatsappBtn = document.createElement('a');
+        whatsappBtn.href = 'https://wa.me/971507363657';
+        whatsappBtn.target = '_blank';
+        whatsappBtn.className = 'whatsapp-float';
+        whatsappBtn.innerHTML = '<i class="fab fa-whatsapp"></i>';
+        whatsappBtn.title = 'Chat on WhatsApp';
+
+        // Add styles
+        const style = document.createElement('style');
+        style.textContent = `
       .whatsapp-float {
         position: fixed;
         bottom: 30px;
@@ -317,12 +316,12 @@ function createWhatsAppButton() {
       }
     `;
 
-    document.head.appendChild(style);
-    document.body.appendChild(whatsappBtn);
-}
+        document.head.appendChild(style);
+        document.body.appendChild(whatsappBtn);
+    }
 
-// Create WhatsApp button
-createWhatsAppButton();
+    // Create WhatsApp button
+    createWhatsAppButton();
 
 
 
