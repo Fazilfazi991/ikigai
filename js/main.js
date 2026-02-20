@@ -170,12 +170,15 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // ===== FORM VALIDATION =====
-    const contactForm = document.querySelector('.contact-form form');
+    // ===== FORM VALIDATION & EMAILJS SUBMISSION =====
+    const contactForm = document.getElementById('contact-form');
 
     if (contactForm) {
         contactForm.addEventListener('submit', function (e) {
-            e.preventDefault();
+            e.preventDefault(); // Stop default form submission
+
+            const submitBtn = document.getElementById('submit-button');
+            const originalBtnText = submitBtn.innerHTML;
 
             // Get form fields
             const name = this.querySelector('input[name="name"]');
@@ -191,31 +194,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 alert('Please enter your name');
                 name.focus();
                 isValid = false;
-                return;
-            }
-
-            if (email && !validateEmail(email.value)) {
+            } else if (email && !validateEmail(email.value)) {
                 alert('Please enter a valid email address');
                 email.focus();
                 isValid = false;
-                return;
-            }
-
-            if (phone && phone.value.trim() === '') {
+            } else if (phone && phone.value.trim() === '') {
                 alert('Please enter your phone number');
                 phone.focus();
                 isValid = false;
-                return;
-            }
-
-            if (message && message.value.trim() === '') {
+            } else if (message && message.value.trim() === '') {
                 alert('Please enter your message');
                 message.focus();
                 isValid = false;
-                return;
-            }
-
-            if (attachment && attachment.files.length > 0) {
+            } else if (attachment && attachment.files.length > 0) {
                 const file = attachment.files[0];
                 const maxSize = 10 * 1024 * 1024; // 10MB
 
@@ -223,14 +214,31 @@ document.addEventListener('DOMContentLoaded', function () {
                     alert('File size exceeds 10MB limit');
                     attachment.value = ''; // Clear the input
                     isValid = false;
-                    return;
                 }
             }
 
             if (isValid) {
-                // In a real application, you would send this data to a server
-                alert('Thank you for your message! We will contact you soon.');
-                this.reset();
+                // Update button state to show loading
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                submitBtn.disabled = true;
+
+                // Send using EmailJS 
+                // emailjs.sendForm(serviceID, templateID, formElement)
+                emailjs.sendForm('service_z884j6b', 'template_t4dc756', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                        alert('Thank you for your message! We will contact you soon.');
+                        this.reset();
+                    })
+                    .catch((error) => {
+                        console.log('FAILED...', error);
+                        alert('Oops! Something went wrong to send the email. Please try again later.');
+                    })
+                    .finally(() => {
+                        // Restore button state
+                        submitBtn.innerHTML = originalBtnText;
+                        submitBtn.disabled = false;
+                    });
             }
         });
     }
