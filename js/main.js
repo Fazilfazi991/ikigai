@@ -208,10 +208,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 isValid = false;
             } else if (attachment && attachment.files.length > 0) {
                 const file = attachment.files[0];
-                const maxSize = 10 * 1024 * 1024; // 10MB
+                const maxSize = 50 * 1024; // 50KB for EmailJS Free Tier
 
                 if (file.size > maxSize) {
-                    alert('File size exceeds 10MB limit');
+                    alert('Due to server limits, attachments must be under 50KB. Please remove the file or upload a smaller one.');
                     attachment.value = ''; // Clear the input
                     isValid = false;
                 }
@@ -222,23 +222,54 @@ document.addEventListener('DOMContentLoaded', function () {
                 submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
                 submitBtn.disabled = true;
 
-                // Send using EmailJS 
-                // emailjs.sendForm(serviceID, templateID, formElement)
-                emailjs.sendForm('service_z884j6b', 'template_t4dc756', this)
-                    .then(() => {
-                        console.log('SUCCESS!');
-                        alert('Thank you for your message! We will contact you soon.');
-                        this.reset();
-                    })
-                    .catch((error) => {
-                        console.log('FAILED...', error);
-                        alert('Oops! Something went wrong to send the email: ' + (error.text || JSON.stringify(error)));
-                    })
-                    .finally(() => {
-                        // Restore button state
+                const templateParams = {
+                    name: name ? name.value : '',
+                    email: email ? email.value : '',
+                    phone: phone ? phone.value : '',
+                    company: this.querySelector('input[name="company"]').value,
+                    country: this.querySelector('input[name="country"]').value,
+                    subject: this.querySelector('select[name="subject"]').value,
+                    message: message ? message.value : ''
+                };
+
+                // Function to handle the actual sending
+                const sendEmail = (params) => {
+                    emailjs.send('service_z884j6b', 'template_t4dc756', params)
+                        .then(() => {
+                            console.log('SUCCESS!');
+                            alert('Thank you for your message! We will contact you soon.');
+                            this.reset();
+                        })
+                        .catch((error) => {
+                            console.log('FAILED...', error);
+                            alert('Oops! Something went wrong to send the email: ' + (error.text || JSON.stringify(error)));
+                        })
+                        .finally(() => {
+                            // Restore button state
+                            submitBtn.innerHTML = originalBtnText;
+                            submitBtn.disabled = false;
+                        });
+                };
+
+                if (attachment && attachment.files.length > 0) {
+                    // Convert file to base64
+                    const file = attachment.files[0];
+                    const reader = new FileReader();
+                    reader.readAsDataURL(file);
+                    reader.onload = function () {
+                        templateParams.attachment = reader.result; // add base64 string to params
+                        sendEmail(templateParams);
+                    };
+                    reader.onerror = function (error) {
+                        console.log('Error reading file: ', error);
+                        alert('Error attaching file. Please try submitting without the attachment.');
                         submitBtn.innerHTML = originalBtnText;
                         submitBtn.disabled = false;
-                    });
+                    };
+                } else {
+                    // Send without attachment
+                    sendEmail(templateParams);
+                }
             }
         });
     }
